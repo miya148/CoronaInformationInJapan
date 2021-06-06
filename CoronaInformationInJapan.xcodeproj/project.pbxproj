@@ -15,6 +15,7 @@
 		8F33E9AD266B25C600B9064F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F33E9AB266B25C600B9064F /* LaunchScreen.storyboard */; };
 		8F33E9B8266B25C600B9064F /* CoronaInformationInJapanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33E9B7266B25C600B9064F /* CoronaInformationInJapanTests.swift */; };
 		8F33E9C3266B25C700B9064F /* CoronaInformationInJapanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33E9C2266B25C700B9064F /* CoronaInformationInJapanUITests.swift */; };
+		8F33E9D4266B28DE00B9064F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33E9D3266B28DE00B9064F /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8F33E9BE266B25C700B9064F /* CoronaInformationInJapanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoronaInformationInJapanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F33E9C2266B25C700B9064F /* CoronaInformationInJapanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaInformationInJapanUITests.swift; sourceTree = "<group>"; };
 		8F33E9C4266B25C700B9064F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F33E9D3266B28DE00B9064F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				8F33E9A9266B25C600B9064F /* Assets.xcassets */,
 				8F33E9AB266B25C600B9064F /* LaunchScreen.storyboard */,
 				8F33E9AE266B25C600B9064F /* Info.plist */,
+				8F33E9D3266B28DE00B9064F /* Colors.swift */,
 			);
 			path = CoronaInformationInJapan;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F33E9A5266B25C400B9064F /* ViewController.swift in Sources */,
+				8F33E9D4266B28DE00B9064F /* Colors.swift in Sources */,
 				8F33E9A1266B25C400B9064F /* AppDelegate.swift in Sources */,
 				8F33E9A3266B25C400B9064F /* SceneDelegate.swift in Sources */,
 			);

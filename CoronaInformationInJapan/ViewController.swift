@@ -61,8 +61,43 @@ class ViewController: UIViewController {
             imageView.transform = CGAffineTransform(rotationAngle: -90)
         }, completion: nil)
         
+        setUpAPI(parentView: contentView)
+    }
+    
+    func setUpAPI(parentView: UIView) {
+        let pcr = UILabel()
+        let positive = UILabel()
+        let hospitalize = UILabel()
+        let severe = UILabel()
+        let death = UILabel()
+        let discharge = UILabel()
         
-
+        let size = CGSize(width: 200, height: 40)
+        let leftX = view.frame.size.width * 0.38
+        let rightX = view.frame.size.width * 0.85
+        let font = UIFont.systemFont(ofSize: 35, weight: .heavy)
+        let color = colors.red
+        
+        setUpAPILabel(pcr, size: size, centerX: leftX, y: 60, font: font, color: color, parentView)
+        setUpAPILabel(positive, size: size, centerX: rightX, y: 60, font: font, color: color, parentView)
+        setUpAPILabel(hospitalize, size: size, centerX: leftX, y: 160, font: font, color: color, parentView)
+        setUpAPILabel(severe, size: size, centerX: rightX, y: 160, font: font, color: color, parentView)
+        setUpAPILabel(death, size: size, centerX: leftX, y: 260, font: font, color: color, parentView)
+        setUpAPILabel(discharge, size: size, centerX: rightX, y: 260, font: font, color: color, parentView)
+        
+        CovidAPI.getTotal(completion: {(result: CoviInfo.Total) -> Void in
+            DispatchQueue.main.async {
+                pcr.text = "\(result.pcr)"
+                positive.text = "\(result.positive)"
+                hospitalize.text = "\(result.hospitalize)"
+                severe.text = "\(result.severe)"
+                death.text = "\(result.death)"
+                discharge.text = "\(result.discharge)"
+                
+            }
+            
+        })
+        
     }
     
     func setUpGradation() {
@@ -79,6 +114,15 @@ class ViewController: UIViewController {
         view.layer.insertSublayer(gradientLayer, at:0)
         
         // TODO: もっと細かくソース解析を行う
+    }
+    
+    func setUpAPILabel(_ label: UILabel, size: CGSize, centerX: CGFloat, y: CGFloat, font: UIFont, color: UIColor, _ parentView: UIView) {
+        label.frame.size = size
+        label.center.x = centerX
+        label.frame.origin.y = y
+        label.font = font
+        label.textColor = color
+        parentView.addSubview(label)
     }
     
     func setUpLabel(_ text: String, size: CGSize, centerX: CGFloat, y: CGFloat, font: UIFont, color: UIColor, _ parentView: UIView) {

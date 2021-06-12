@@ -16,6 +16,8 @@
 		8F33E9B8266B25C600B9064F /* CoronaInformationInJapanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33E9B7266B25C600B9064F /* CoronaInformationInJapanTests.swift */; };
 		8F33E9C3266B25C700B9064F /* CoronaInformationInJapanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33E9C2266B25C700B9064F /* CoronaInformationInJapanUITests.swift */; };
 		8F33E9D4266B28DE00B9064F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F33E9D3266B28DE00B9064F /* Colors.swift */; };
+		8F88C8422674B2B900F9A7C9 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F88C8412674B2B900F9A7C9 /* Entity.swift */; };
+		8F88C8472674C6E900F9A7C9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F88C8462674C6E900F9A7C9 /* API.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		8F33E9C2266B25C700B9064F /* CoronaInformationInJapanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoronaInformationInJapanUITests.swift; sourceTree = "<group>"; };
 		8F33E9C4266B25C700B9064F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F33E9D3266B28DE00B9064F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8F88C8412674B2B900F9A7C9 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		8F88C8462674C6E900F9A7C9 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				8F33E9AB266B25C600B9064F /* LaunchScreen.storyboard */,
 				8F33E9AE266B25C600B9064F /* Info.plist */,
 				8F33E9D3266B28DE00B9064F /* Colors.swift */,
+				8F88C8412674B2B900F9A7C9 /* Entity.swift */,
+				8F88C8462674C6E900F9A7C9 /* API.swift */,
 			);
 			path = CoronaInformationInJapan;
 			sourceTree = "<group>";
@@ -262,8 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F33E9A5266B25C400B9064F /* ViewController.swift in Sources */,
+				8F88C8422674B2B900F9A7C9 /* Entity.swift in Sources */,
 				8F33E9D4266B28DE00B9064F /* Colors.swift in Sources */,
 				8F33E9A1266B25C400B9064F /* AppDelegate.swift in Sources */,
+				8F88C8472674C6E900F9A7C9 /* API.swift in Sources */,
 				8F33E9A3266B25C400B9064F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

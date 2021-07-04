@@ -44,8 +44,13 @@ class ViewController: UIViewController {
         
         // ボタン実装
         let height = view.frame.size.height / 2
-        setUpButton("健康状態", size: size, y: height + 190, color: colors.red, parentView: view)
+        /*
+         touchDown: 下から出てくる
+         */
+        setUpButton("健康状態", size: size, y: height + 190, color: colors.red, parentView: view).addTarget(self, action: #selector(goHealthCheck), for: .touchDown)
         setUpButton("県別状態", size: size, y: height + 240, color: colors.red, parentView: view)
+        
+        setUpButton("ユーザー登録", size: size, y: height + 290, color: colors.red, parentView: view).addTarget(self, action: #selector(goUserRegistration), for: .touchDown)
         // 画面上部のボタン
         // #selectorで@objcを呼び出す。タップアクション的な
         // ただボタンを押下しても何も起きない。うまく継承できていないかも
@@ -137,8 +142,8 @@ class ViewController: UIViewController {
         parentView.addSubview(label)
         
     }
-    
-    func setUpButton(_ title: String, size: CGSize, y: CGFloat, color: UIColor, parentView: UIView) {
+    // 返す変数の方を「 -> 型名」で書く
+    func setUpButton(_ title: String, size: CGSize, y: CGFloat, color: UIColor, parentView: UIView) -> UIButton {
         let button = UIButton(type: .system)
         button.setTitle(title, for: .normal)
         button.frame.size = size
@@ -152,6 +157,8 @@ class ViewController: UIViewController {
         button.setTitleColor(color, for: .normal)
         // ここでviewをセットしている
         parentView.addSubview(button)
+        
+        return button
     }
     
     func setUpImageButton(_ name: String, x: CGFloat) -> UIButton {
@@ -171,6 +178,20 @@ class ViewController: UIViewController {
     @objc func reloadAction() {
         loadView()
         viewDidLoad()
+    }
+    
+    @objc func goHealthCheck() {
+        /*
+         performSegue: segueを使用して画面遷移したいときに使用する。
+         withIdentifierにはsegueのidentifierに設定した値
+         senderには遷移時に何かを受け渡したいときに設定する(なければnilを渡す)
+         
+         */
+        performSegue(withIdentifier: "goHealthCheck", sender: nil)
+    }
+    
+    @objc func goUserRegistration() {
+        performSegue(withIdentifier: "goUserRegistration", sender: nil)
     }
 
 

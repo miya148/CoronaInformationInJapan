@@ -48,7 +48,7 @@ class ViewController: UIViewController {
          touchDown: 下から出てくる
          */
         setUpButton("健康状態", size: size, y: height + 190, color: colors.red, parentView: view).addTarget(self, action: #selector(goHealthCheck), for: .touchDown)
-        setUpButton("県別状態", size: size, y: height + 240, color: colors.red, parentView: view)
+        setUpButton("県別状態", size: size, y: height + 240, color: colors.red, parentView: view).addTarget(self, action: #selector(goChart), for: .touchDown)
         
         setUpButton("ユーザー登録", size: size, y: height + 290, color: colors.red, parentView: view).addTarget(self, action: #selector(goUserRegistration), for: .touchDown)
         // 画面上部のボタン
@@ -90,7 +90,7 @@ class ViewController: UIViewController {
         setUpAPILabel(death, size: size, centerX: leftX, y: 260, font: font, color: color, parentView)
         setUpAPILabel(discharge, size: size, centerX: rightX, y: 260, font: font, color: color, parentView)
         
-        CovidAPI.getTotal(completion: {(result: CoviInfo.Total) -> Void in
+        CovidAPI.getTotal(completion: {(result: CovidInfo.Total) -> Void in
             DispatchQueue.main.async {
                 pcr.text = "\(result.pcr)"
                 positive.text = "\(result.positive)"
@@ -192,6 +192,10 @@ class ViewController: UIViewController {
     
     @objc func goUserRegistration() {
         performSegue(withIdentifier: "goUserRegistration", sender: nil)
+    }
+    
+    @objc func goChart() {
+        performSegue(withIdentifier: "goChart", sender: nil)
     }
 
 

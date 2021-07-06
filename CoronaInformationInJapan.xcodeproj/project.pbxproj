@@ -25,6 +25,9 @@
 		8FD4F789268B6993009A43C4 /* PhysicalConditionDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4F788268B6993009A43C4 /* PhysicalConditionDataModel.swift */; };
 		8FD4F794268B6BAC009A43C4 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4F793268B6BAC009A43C4 /* UserModel.swift */; };
 		8FD4F799268CC0D2009A43C4 /* UserRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4F798268CC0D2009A43C4 /* UserRegistrationViewController.swift */; };
+		8FD4F7C62691F684009A43C4 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4F7C52691F684009A43C4 /* ChartViewController.swift */; };
+		8FD4F7CB269346F9009A43C4 /* CircleChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4F7CA269346F9009A43C4 /* CircleChartViewController.swift */; };
+		8FD4F7D026934D41009A43C4 /* CovidSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4F7CF26934D41009A43C4 /* CovidSingleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		8FD4F788268B6993009A43C4 /* PhysicalConditionDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalConditionDataModel.swift; sourceTree = "<group>"; };
 		8FD4F793268B6BAC009A43C4 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		8FD4F798268CC0D2009A43C4 /* UserRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegistrationViewController.swift; sourceTree = "<group>"; };
+		8FD4F7C52691F684009A43C4 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		8FD4F7CA269346F9009A43C4 /* CircleChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleChartViewController.swift; sourceTree = "<group>"; };
+		8FD4F7CF26934D41009A43C4 /* CovidSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidSingleton.swift; sourceTree = "<group>"; };
 		CD121B83562A23679EE3C95B /* Pods_CoronaInformationInJapanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoronaInformationInJapanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CE514DF74C05D36F4482EC /* Pods_CoronaInformationInJapan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoronaInformationInJapan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -166,6 +172,9 @@
 				8F88C8462674C6E900F9A7C9 /* API.swift */,
 				8F88C8622675C01500F9A7C9 /* HealhCheckViewController.swift */,
 				8FD4F798268CC0D2009A43C4 /* UserRegistrationViewController.swift */,
+				8FD4F7C52691F684009A43C4 /* ChartViewController.swift */,
+				8FD4F7CA269346F9009A43C4 /* CircleChartViewController.swift */,
+				8FD4F7CF26934D41009A43C4 /* CovidSingleton.swift */,
 			);
 			path = CoronaInformationInJapan;
 			sourceTree = "<group>";
@@ -439,12 +448,15 @@
 				8F88C8632675C01500F9A7C9 /* HealhCheckViewController.swift in Sources */,
 				8F33E9A5266B25C400B9064F /* ViewController.swift in Sources */,
 				8F88C8422674B2B900F9A7C9 /* Entity.swift in Sources */,
+				8FD4F7D026934D41009A43C4 /* CovidSingleton.swift in Sources */,
 				8F33E9D4266B28DE00B9064F /* Colors.swift in Sources */,
+				8FD4F7CB269346F9009A43C4 /* CircleChartViewController.swift in Sources */,
 				8FD4F789268B6993009A43C4 /* PhysicalConditionDataModel.swift in Sources */,
 				8F33E9A1266B25C400B9064F /* AppDelegate.swift in Sources */,
 				8F88C8472674C6E900F9A7C9 /* API.swift in Sources */,
 				8FD4F794268B6BAC009A43C4 /* UserModel.swift in Sources */,
 				8F33E9A3266B25C400B9064F /* SceneDelegate.swift in Sources */,
+				8FD4F7C62691F684009A43C4 /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

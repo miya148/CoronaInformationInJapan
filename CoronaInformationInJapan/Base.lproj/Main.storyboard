@@ -18,14 +18,51 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="LWV-cm-8Sr"/>
                     <connections>
                         <segue destination="XFG-Mb-kGd" kind="show" identifier="goHealthCheck" id="iJl-c2-yR9"/>
                         <segue destination="t8w-bS-Jih" kind="show" identifier="goUserRegistration" id="Q6z-yO-rcJ"/>
+                        <segue destination="4bB-YC-8Mm" kind="show" identifier="goChart" id="xGz-i3-O4G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="78"/>
+        </scene>
+        <!--Chart View Controller-->
+        <scene sceneID="l3c-vf-E9K">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="4bB-YC-8Mm" customClass="ChartViewController" customModule="CoronaInformationInJapan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XPN-Tc-OM8" customClass="Chart">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8Qe-oQ-vSi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oNx-Ed-Fd0"/>
+                    <connections>
+                        <segue destination="tk3-nj-FTv" kind="show" identifier="goCircle" id="tbK-zf-Kbx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9jS-Pz-1xc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="909" y="-623"/>
+        </scene>
+        <!--Circle Chart View Controller-->
+        <scene sceneID="qIQ-HT-Bhn">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="tk3-nj-FTv" customClass="CircleChartViewController" customModule="CoronaInformationInJapan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3ka-Oy-cjQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="NdD-dg-5UA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xa2-Tk-9Te"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SrN-Jm-8lZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1707" y="-623"/>
         </scene>
         <!--Healh Check View Controller-->
         <scene sceneID="Cro-W7-8T9">

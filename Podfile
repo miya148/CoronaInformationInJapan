@@ -9,6 +9,7 @@ target 'CoronaInformationInJapan' do
   pod 'FSCalendar'
   pod 'CalculateCalendarLogic'
   pod 'RealmSwift'
+  pod 'Charts'
 
   target 'CoronaInformationInJapanTests' do
     inherit! :search_paths

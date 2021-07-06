@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct CoviInfo: Codable {
+struct CovidInfo: Codable {
+    // Codable API通信等で取得したJSONやプロパティリストを任意のデータ型に変換するプロトコル
     struct Total: Codable {
         var pcr: Int
         var positive: Int
@@ -15,5 +16,13 @@ struct CoviInfo: Codable {
         var severe: Int
         var death: Int
         var discharge: Int
+    }
+    
+    struct Prefecture: Codable {
+        var id: Int
+        var name_ja: String
+        var cases: Int
+        var deaths: Int
+        var pcr: Int
     }
 }

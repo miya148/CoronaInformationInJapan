@@ -49,6 +49,7 @@ class ChartViewController: UIViewController {
         nextButton.setTitleColor(.white, for: .normal)
         nextButton.titleLabel?.font = .systemFont(ofSize: 20)
         nextButton.addTarget(self, action: #selector(goCircle), for: .touchUpInside)
+        view.addSubview(nextButton)
         
         segment = UISegmentedControl(items: ["感染者数", "PCR数", "死者数"])
         segment.frame = CGRect(x: 10, y: 70, width: view.frame.size.width - 20, height: 20)
@@ -170,7 +171,7 @@ class ChartViewController: UIViewController {
     }
     
     @objc func goCircle() {
-        print("tappedNextButton")
+        performSegue(withIdentifier: "goCircle", sender: nil)
     }
     
     func bottomLabel(_ parentView: UIView, _ label: UILabel, _ x: CGFloat, _ y: CGFloat, text: String, size: CGFloat, weight: UIFont.Weight, color: UIColor) {

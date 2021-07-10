@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>821148126982-okf75aahc9em1cclp5l5ba9lvav6bagd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.821148126982-okf75aahc9em1cclp5l5ba9lvav6bagd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCihuXMmG_FW-vVQNLsuNVpIOWd8tDZq1g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>821148126982</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>Shunsuke-MIYANO.CoronaInformationInJapan</string>
+	<key>PROJECT_ID</key>
+	<string>coronaapp-4062f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>coronaapp-4062f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:821148126982:ios:87c92b9d878b07c823d887</string>
+</dict>
+</plist>

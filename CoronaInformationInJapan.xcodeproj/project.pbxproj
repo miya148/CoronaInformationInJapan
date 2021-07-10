@@ -28,6 +28,7 @@
 		8FD4F7C62691F684009A43C4 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4F7C52691F684009A43C4 /* ChartViewController.swift */; };
 		8FD4F7CB269346F9009A43C4 /* CircleChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4F7CA269346F9009A43C4 /* CircleChartViewController.swift */; };
 		8FD4F7D026934D41009A43C4 /* CovidSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4F7CF26934D41009A43C4 /* CovidSingleton.swift */; };
+		8FD4F7EA269A100E009A43C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD4F7E9269A100E009A43C4 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		8FD4F7C52691F684009A43C4 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		8FD4F7CA269346F9009A43C4 /* CircleChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleChartViewController.swift; sourceTree = "<group>"; };
 		8FD4F7CF26934D41009A43C4 /* CovidSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidSingleton.swift; sourceTree = "<group>"; };
+		8FD4F7E9269A100E009A43C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CD121B83562A23679EE3C95B /* Pods_CoronaInformationInJapanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoronaInformationInJapanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CE514DF74C05D36F4482EC /* Pods_CoronaInformationInJapan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoronaInformationInJapan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -163,6 +165,7 @@
 				8F33E9A0266B25C400B9064F /* AppDelegate.swift */,
 				8F33E9A2266B25C400B9064F /* SceneDelegate.swift */,
 				8F33E9A4266B25C400B9064F /* ViewController.swift */,
+				8FD4F7E9269A100E009A43C4 /* GoogleService-Info.plist */,
 				8F33E9A6266B25C400B9064F /* Main.storyboard */,
 				8F33E9A9266B25C600B9064F /* Assets.xcassets */,
 				8F33E9AB266B25C600B9064F /* LaunchScreen.storyboard */,
@@ -315,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F33E9AD266B25C600B9064F /* LaunchScreen.storyboard in Resources */,
+				8FD4F7EA269A100E009A43C4 /* GoogleService-Info.plist in Resources */,
 				8F33E9AA266B25C600B9064F /* Assets.xcassets in Resources */,
 				8F33E9A8266B25C400B9064F /* Main.storyboard in Resources */,
 			);

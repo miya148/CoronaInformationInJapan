@@ -10,6 +10,13 @@ target 'CoronaInformationInJapan' do
   pod 'CalculateCalendarLogic'
   pod 'RealmSwift'
   pod 'Charts'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
+  pod 'FirebaseFirestoreSwift'
+  pod 'Firebase/Crashlytics'
+
 
   target 'CoronaInformationInJapanTests' do
     inherit! :search_paths

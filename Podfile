@@ -16,6 +16,8 @@ target 'CoronaInformationInJapan' do
   pod 'Firebase/Firestore'
   pod 'FirebaseFirestoreSwift'
   pod 'Firebase/Crashlytics'
+  pod 'MessageKit'
+  pod 'MessageInputBar'
 
 
   target 'CoronaInformationInJapanTests' do

@@ -23,11 +23,28 @@
                         <segue destination="XFG-Mb-kGd" kind="show" identifier="goHealthCheck" id="iJl-c2-yR9"/>
                         <segue destination="t8w-bS-Jih" kind="show" identifier="goUserRegistration" id="Q6z-yO-rcJ"/>
                         <segue destination="4bB-YC-8Mm" kind="show" identifier="goChart" id="xGz-i3-O4G"/>
+                        <segue destination="8I5-6e-GDt" kind="show" identifier="goChat" id="g3V-Zb-W7g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="78"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="jGh-Yx-ret">
+            <objects>
+                <viewController id="8I5-6e-GDt" customClass="ChatViewController" customModule="CoronaInformationInJapan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="had-Xb-U9Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="P6J-Ac-SW9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CSe-aD-5zz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Um1-r3-wCh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="-623"/>
         </scene>
         <!--Chart View Controller-->
         <scene sceneID="l3c-vf-E9K">

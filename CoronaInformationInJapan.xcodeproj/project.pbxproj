@@ -29,6 +29,8 @@
 		8FD4F7CB269346F9009A43C4 /* CircleChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4F7CA269346F9009A43C4 /* CircleChartViewController.swift */; };
 		8FD4F7D026934D41009A43C4 /* CovidSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4F7CF26934D41009A43C4 /* CovidSingleton.swift */; };
 		8FD4F7EA269A100E009A43C4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8FD4F7E9269A100E009A43C4 /* GoogleService-Info.plist */; };
+		8FD4F812269DE56B009A43C4 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4F811269DE56B009A43C4 /* ChatViewController.swift */; };
+		8FD4F83A269F1862009A43C4 /* FirestoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD4F839269F1862009A43C4 /* FirestoreData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,8 @@
 		8FD4F7CA269346F9009A43C4 /* CircleChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleChartViewController.swift; sourceTree = "<group>"; };
 		8FD4F7CF26934D41009A43C4 /* CovidSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidSingleton.swift; sourceTree = "<group>"; };
 		8FD4F7E9269A100E009A43C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8FD4F811269DE56B009A43C4 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		8FD4F839269F1862009A43C4 /* FirestoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreData.swift; sourceTree = "<group>"; };
 		CD121B83562A23679EE3C95B /* Pods_CoronaInformationInJapanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoronaInformationInJapanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2CE514DF74C05D36F4482EC /* Pods_CoronaInformationInJapan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoronaInformationInJapan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -178,6 +182,7 @@
 				8FD4F7C52691F684009A43C4 /* ChartViewController.swift */,
 				8FD4F7CA269346F9009A43C4 /* CircleChartViewController.swift */,
 				8FD4F7CF26934D41009A43C4 /* CovidSingleton.swift */,
+				8FD4F811269DE56B009A43C4 /* ChatViewController.swift */,
 			);
 			path = CoronaInformationInJapan;
 			sourceTree = "<group>";
@@ -205,6 +210,7 @@
 			children = (
 				8FD4F788268B6993009A43C4 /* PhysicalConditionDataModel.swift */,
 				8FD4F793268B6BAC009A43C4 /* UserModel.swift */,
+				8FD4F839269F1862009A43C4 /* FirestoreData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -455,9 +461,11 @@
 				8FD4F7D026934D41009A43C4 /* CovidSingleton.swift in Sources */,
 				8F33E9D4266B28DE00B9064F /* Colors.swift in Sources */,
 				8FD4F7CB269346F9009A43C4 /* CircleChartViewController.swift in Sources */,
+				8FD4F83A269F1862009A43C4 /* FirestoreData.swift in Sources */,
 				8FD4F789268B6993009A43C4 /* PhysicalConditionDataModel.swift in Sources */,
 				8F33E9A1266B25C400B9064F /* AppDelegate.swift in Sources */,
 				8F88C8472674C6E900F9A7C9 /* API.swift in Sources */,
+				8FD4F812269DE56B009A43C4 /* ChatViewController.swift in Sources */,
 				8FD4F794268B6BAC009A43C4 /* UserModel.swift in Sources */,
 				8F33E9A3266B25C400B9064F /* SceneDelegate.swift in Sources */,
 				8FD4F7C62691F684009A43C4 /* ChartViewController.swift in Sources */,

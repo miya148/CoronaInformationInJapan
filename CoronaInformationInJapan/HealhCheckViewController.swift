@@ -118,11 +118,7 @@ class HealhCheckViewController: UIViewController {
                     self.dismiss(animated: true, completion: nil)
                 }
             })
-            // 診断結果をローカルに保存
-            /**
-            TODO: ここをrealm処理に変更する
-             */
-            UserDefaults.standard.set(resultTitle.startIndex, forKey: self.today)
+            UserDefaults.standard.set(resultTitle, forKey: self.today)
         })
         let noAction = UIAlertAction(title: "キャンセル", style: .destructive, handler: nil)
         alert.addAction(yesAction)
@@ -173,9 +169,9 @@ class HealhCheckViewController: UIViewController {
         
     }
     
-    func addData() {
-        
-    }
+//    func addData() {
+//
+//    }
 
 }
 

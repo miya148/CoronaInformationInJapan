@@ -49,8 +49,10 @@ class ViewController: UIViewController {
          */
         setUpButton("健康状態", size: size, y: height + 190, color: colors.red, parentView: view).addTarget(self, action: #selector(goHealthCheck), for: .touchDown)
         setUpButton("県別状態", size: size, y: height + 240, color: colors.red, parentView: view).addTarget(self, action: #selector(goChart), for: .touchDown)
-        
         setUpButton("ユーザー登録", size: size, y: height + 290, color: colors.red, parentView: view).addTarget(self, action: #selector(goUserRegistration), for: .touchDown)
+        setUpButton("クラッシュ", size: size, y: height + 340, color: colors.red, parentView: view).addTarget(self, action: #selector(crash), for: [.touchUpInside, .touchUpOutside])
+        
+        
         // 画面上部のボタン
         // #selectorで@objcを呼び出す。タップアクション的な
         // ただボタンを押下しても何も起きない。うまく継承できていないかも
@@ -196,6 +198,10 @@ class ViewController: UIViewController {
     
     @objc func goChart() {
         performSegue(withIdentifier: "goChart", sender: nil)
+    }
+    
+    @objc func crash() {
+        fatalError()
     }
 
 
